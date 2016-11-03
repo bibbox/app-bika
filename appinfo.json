@@ -3,6 +3,7 @@
 		"short_name": "BIKA.biobank",
 		"version": "x,y",
 		"description": "The Bika Open Source LIMS Collective is currently extending Bika Health for fully fledged Biobank management in collaboration with SANBI, funded by B3Africa, a European Union Horizon2020 project. Workflows for Sampling Kit Assembly, Document Management and Sample Preparation, and Qubit, Biodrop and Biorad interfaces have been completed and will be released as Bika Biobank in the not too distant future and integrated into the Biobank-in-a-Box platform at B3Africa",
+         "short_description": "Sample Management, Biobank Information Management System",
 		"catalogue_url": "",
 		"application_url": "https://www.bikalims.org/news/bika-biobank-call-for-participation",
 		"tags": ["Sample Management", "LIMS"]
