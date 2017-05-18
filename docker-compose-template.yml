@@ -1,0 +1,27 @@
+version: '2'
+
+networks:
+    bibbox-default-network:
+      external: true
+
+services:
+
+  §§INSTANCE-bika:
+    image: bibbox/bika
+    container_name:  §§INSTANCE-bika
+    restart: unless-stopped
+    networks:
+      - bibbox-default-network
+    ports:
+      - "§§PORT:8080"
+    depends_on:
+      - §§INSTANCE-bika-data
+    volumes_from:
+      - §§INSTANCE-bika-data
+
+  §§INSTANCE-bika-data:
+    image: busybox
+    container_name: §§INSTANCE-bika-data
+    volumes:
+      - ./mounted/data/filestorage:/data/filestorage
+      - ./mounted/data/blobstorage:/data/blobstorage
